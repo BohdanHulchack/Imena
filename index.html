@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+		<link rel="stylesheet" href="popup.css" />
+      <script src="jquery.min.js"></script>
+      <script src="popup.js"></script>
+</head>
+<body>
+   <img class="trigger" src="banner.png" />
+
+   <div id="popup_registration">
+   	<div class="reg_voting">
+   		<label for="reg_name">
+   			<h2>РЕЄСТРАЦІЯ</h2>
+				<h3>для голосування</h3>
+   		</label>
+   		<input id="reg_name" type="text" placeholder="Ім'я">
+   		<input id="reg_email" type="email" placeholder="E-mail">
+   		<button>РЕЄСТРАЦІЯ</button>
+   		<h4>
+				Вам буде надіслано
+				запрошення <br>
+				для голосування
+  		</h4>
+   	</div>
+   	
+   	<div class="popup_logo"></div>
+   	
+   	<div class="reg_brand">
+   		<label for="brand">
+   			<h2>
+   				РЕЄСТРАЦІЯ БРЕНДУ
+   			</h2>
+   		</label>
+   		<input id="brand" type="text" placeholder="Бренд">
+   		<label for="brand_name">
+   			<h4>
+   				Уповноважена особа
+   			</h4>
+   		</label>
+   		<input id="brand_name" type="text" placeholder="Ім'я відповідального">
+   		<input id="brand_email" type="email" placeholder="E-mail">
+   		<input id="brand_tel" type="tel" placeholder="Телефон">
+   		<button>ЗАРЕЄСТРУВАТИ</button>
+   	</div>
+   	<div class="clear"></div>
+   	<a href="brands.pdf">Про проект «Обрані Бренди 2015»</a>
+      <div id="reg_voting" class="reg_sucsess">
+         Дякуємо за реєстрацію,Вам буде надіслано 
+         запрошення для голосування
+      </div>
+      <div id="reg_brand" class="reg_sucsess">
+         Дякуємо за реєстрацію,з Вами зв’яжеться наш менеджер
+      </div>
+      <div id="reg_fail" class="reg_fail">
+         Заповніть форму
+      </div>
+   </div>
+   <div id="overlay"></div>
+   
+</body>
+</html>
+
+
+
