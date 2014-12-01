@@ -1,100 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="popup.css" />
+<script src="jquery.min.js"></script>
+<script src="popup.js"></script>
 </head>
 <body>
-
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
+<img class="trigger" src="banner.png" />
+<div id="popup_registration">
+<div class="reg_voting" id="mc_embed_signup">
 <form action="//imenaroku.us9.list-manage.com/subscribe/post?u=7e0f918d621ab968d50ce89e9&amp;id=4080d116af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-  <h2>Subscribe to our mailing list</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-  <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+<label for="mce-FNAME">
+<h2>РЕЄСТРАЦІЯ</h2>
+<h3>для голосування</h3>
 </label>
-  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+<input placeholder="Ім'я" type="text" value="" name="FNAME" class="" id="mce-FNAME">
+<input placeholder="E-mail" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+<div id="mce-responses" class="clear">
+<div class="response" id="mce-error-response" style="display:none"></div>
+<div class="response" id="mce-success-response" style="display:none"></div>
 </div>
-<div class="mc-field-group">
-  <label for="mce-FNAME">First Name </label>
-  <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+<div style="position: absolute; left: -5000px;">
+<input type="text" name="b_7e0f918d621ab968d50ce89e9_4080d116af" tabindex="-1" value="">
 </div>
-  <div id="mce-responses" class="clear">
-    <div class="response" id="mce-error-response" style="display:none"></div>
-    <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_7e0f918d621ab968d50ce89e9_4080d116af" tabindex="-1" value=""></div>
-    <div class="clear"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" >Subscribe</button></div>
-    </div>
+<input type="submit" value="РЕЄСТРАЦІЯ" name="subscribe" id="mc-embedded-subscribe" class="button">
 </form>
+<h4>
+Вам буде надіслано
+запрошення <br>
+для голосування
+</h4>
 </div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup
-   <div id="popup_registration">
-
-   	<div class="reg_voting" id="mc_embed_signup">
-      <form action="//imenaroku.us9.list-manage.com/subscribe/post?u=7e0f918d621ab968d50ce89e9&amp;id=4080d116af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-     		<label for="mce-FNAME">
-     			<h2>РЕЄСТРАЦІЯ</h2>
-  				<h3>для голосування</h3>
-     		</label>
-     		<input placeholder="Ім'я" type="text" value="" name="FNAME" class="" id="mce-FNAME">
-     		<input placeholder="E-mail" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-        <div id="mce-responses" class="clear">
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
-        </div>
-        <div style="position: absolute; left: -5000px;">
-          <input type="text" name="b_7e0f918d621ab968d50ce89e9_4080d116af" tabindex="-1" value="">
-        </div>
-     		<input type="submit" value="РЕЄСТРАЦІЯ" name="subscribe" id="mc-embedded-subscribe" class="button">
-      </form>
-     		<h4>
-  				Вам буде надіслано
-  				запрошення <br>
-  				для голосування
-    		</h4>
-   	</div>
-   	<div class="popup_logo"></div>
-   	
-   	<div class="reg_brand">
-   		<label for="brand">
-   			<h2>
-   				РЕЄСТРАЦІЯ БРЕНДУ
-   			</h2>
-   		</label>
-   		<input id="brand" type="text" placeholder="Бренд">
-   		<label for="brand_name">
-   			<h4>
-   				Уповноважена особа
-   			</h4>
-   		</label>
-   		<input id="brand_name" type="text" placeholder="Ім'я відповідального">
-   		<input id="brand_email" type="email" placeholder="E-mail">
-   		<input id="brand_tel" type="tel" placeholder="Телефон">
-   		<button>ЗАРЕЄСТРУВАТИ</button>
-   	</div>
-   	<div class="clear"></div>
-   	<a href="brands.pdf">Про проект «Обрані Бренди 2015»</a>
-      <div id="reg_voting" class="reg_sucsess">
-         Дякуємо за реєстрацію,Вам буде надіслано 
-         запрошення для голосування
-      </div>
-      <div id="reg_brand" class="reg_sucsess">
-         Дякуємо за реєстрацію,з Вами зв’яжеться наш менеджер
-      </div>
-      <div id="reg_fail" class="reg_fail">
-         Заповніть форму
-      </div>
-   </div>
-   <div id="overlay"></div>-->
+<div class="popup_logo"></div>
+<div class="reg_brand">
+<label for="brand">
+<h2>
+РЕЄСТРАЦІЯ БРЕНДУ
+</h2>
+</label>
+<input id="brand" type="text" placeholder="Бренд">
+<label for="brand_name">
+<h4>
+Уповноважена особа
+</h4>
+</label>
+<input id="brand_name" type="text" placeholder="Ім'я відповідального">
+<input id="brand_email" type="email" placeholder="E-mail">
+<input id="brand_tel" type="tel" placeholder="Телефон">
+<button>ЗАРЕЄСТРУВАТИ</button>
+</div>
+<div class="clear"></div>
+<a href="brands.pdf">Про проект «Обрані Бренди 2015»</a>
+<div id="reg_voting" class="reg_sucsess">
+Дякуємо за реєстрацію,Вам буде надіслано
+запрошення для голосування
+</div>
+<div id="reg_brand" class="reg_sucsess">
+Дякуємо за реєстрацію,з Вами зв’яжеться наш менеджер
+</div>
+<div id="reg_fail" class="reg_fail">
+Заповніть форму
+</div>
+</div>
+<div id="overlay"></div>
 </body>
 </html>
